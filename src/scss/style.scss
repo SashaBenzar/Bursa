@@ -1,0 +1,23 @@
+@import '_zero_style';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'tables';
+@import 'notoriety';
+@import 'account';
+@import 'document';
+
+.wrapper {
+  min-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.conteiner {
+  max-width: 1780px;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}

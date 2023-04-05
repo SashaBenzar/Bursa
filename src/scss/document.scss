@@ -1,0 +1,48 @@
+.document {
+  width: 1100px;
+  margin: 0 auto;
+  & * {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  &__text {
+    font-size: 20px;
+    & u {
+      font-weight: bold;
+    }
+  }
+
+  &__head {
+  }
+
+  &__title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.5;
+  }
+
+  &__text2 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+  }
+
+  &__text3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__body {
+    width: 100%;
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      vertical-align: middle;
+      height: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.table {
+  width: 80%;
+  min-width: 900px;
+  margin: 0px auto 50px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    background: #005396;
+    border-radius: 15px 15px 0px 0px;
+    & > div {
+      flex: 1 1 16.6%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 0;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.4px;
+      color: #ffffff;
+      &:not(:last-child) {
+        border-right: 1px solid #ffffff;
+      }
+    }
+  }
+
+  &__body {
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+  }
+
+  &__check {
+    position: absolute;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    background-color: #00ff0a;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__component {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    & > div {
+      flex: 1 1 16.6%;
+      min-height: 28px;
+      padding: 40px 0px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.4px;
+      color: #000000;
+      border: 1px solid #000000;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      & input {
+        width: 80%;
+        border: 0;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        color: #000000;
+      }
+
+      &:not(:last-child) {
+        border-right: 0px;
+      }
+
+      &.table__sub {
+        display: flex;
+        padding: 0;
+        min-height: 108px;
+
+        div {
+          flex: 1 1 33.333%;
+          padding: 40px 7.5px;
+          &:not(:last-child) {
+            border-right: 1px solid #000000;
+          }
+        }
+      }
+    }
+  }
+
+  &__edit {
+    position: absolute;
+    right: -100px;
+    padding-right: 30px;
+    & img {
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.modify > div {
+  flex: 1 1 20%;
+}
+
+.button {
+  padding: 10px 15px;
+  border: 0;
+  background: #005396;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  &:active {
+    transform: translateY(2px);
+  }
+}

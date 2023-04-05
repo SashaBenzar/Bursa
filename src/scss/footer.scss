@@ -1,0 +1,16 @@
+.footer {
+  background: #005396;
+  padding: 15px 0;
+  &__conteiner {
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

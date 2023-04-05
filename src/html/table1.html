@@ -1,0 +1,45 @@
+<!---------------------------------- таблиця відомості успішності студентів ---------------------------------->
+<div class="table">
+  <div class="table__head">
+    <div>№<br />Відомості</div>
+    <div>Дата</div>
+    <div>Группа</div>
+    <div>Загальна кількість годин</div>
+    <div>Дисципліна</div>
+    <div>Викладач</div>
+  </div>
+  <div class="table__body">
+    <div class="table__row">
+      <div class="table__check"></div>
+      <div class="table__component">
+        <div>22/594</div>
+        <div>15.03.2023</div>
+        <div>К-301</div>
+        <div>100 годин</div>
+        <div title="Тестування программних систем i комплексiв">
+          Тестування программних систем i комплексiв
+        </div>
+        <div>Артеменко О.І.</div>
+      </div>
+      <div class="table__edit">
+        <img src="@img/edit.svg" alt="edit" /><img src="@img/delete.svg" alt="delete" />
+      </div>
+    </div>
+    <div class="table__row">
+      <div class="table__component modify">
+        <div>
+          <input type="text" placeholder="№" />
+        </div>
+        <div><input type="text" placeholder="Дата" /></div>
+        <div><input type="text" placeholder="Группа" /></div>
+        <div><input type="text" placeholder="Години" /></div>
+        <div><input type="text" placeholder="Дисципліна" /></div>
+        <div><input type="text" placeholder="Викладач" /></div>
+      </div>
+      <div class="table__edit">
+        <img src="@img/eye.svg" alt="edit" />
+      </div>
+    </div>
+    <button class="table__add button">+</button>
+  </div>
+</div>
