@@ -11,6 +11,31 @@
     top: 0;
     left: 0;
     z-index: 1;
+    @media (max-width: 1024px){
+      img{
+        width: 164px;
+      }
+    }
+    @media (max-width: 768px) {
+      img{
+        width: 110px;
+      }
+    }
+    @media (max-width: 650px) {
+      position: absolute;
+      left: unset;
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      background: #005396;
+      position: relative;
+      left: calc(-50vw + 50%);
+      width: 100vw;
+      justify-content: center;
+      img{
+        width: 85px;
+      }
+    }
   }
 
   &__body {
@@ -32,6 +57,43 @@
       #005290 75%,
       #004c85 100%
     );
+    @media (max-width: 900px){
+      img{
+        width: 400px;
+      }
+    }
+    @media (max-width: 686px){
+      img{
+        width: 350px;
+      }
+    }
+    @media (max-width: 650px){
+      padding: 8px 0px;
+      background: #005396;
+    }
+    @media (max-width: 378px){
+      img{
+        width: 300px;
+      }
+    }
+    @media (max-width: 300px){
+      img{
+        width: 250px;
+      }
+    }
+  }
+
+  &__burger{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    img{
+      width: 35px;
+    }
+    @media (max-width: 470px) {
+      display: unset;
+    }
   }
 
   &__bottom {
@@ -39,10 +101,14 @@
     display: flex;
     justify-content: center;
     background: #005396;
+
+    // @media (max-width: 470px) {
+    //   display: none;
+    // }
   }
 
-  &__menu {
-  }
+  // &__menu {
+  // }
 
   &__list {
     display: flex;
@@ -61,6 +127,18 @@
       flex-direction: column;
       align-items: center;
 
+      @media (max-width: 900px) {
+        font-size: 10px;
+      }
+      @media (max-width: 686px) {
+        font-size: 9px;
+      }
+      @media (max-width: 650px) {
+        font-size: 11px;
+      }
+      @media (max-width: 550px) {
+      }
+
       &::after {
         display: block;
         content: '';
@@ -77,6 +155,17 @@
 
       &:not(:last-child) {
         margin: 0 75px 0 0;
+
+        @media (max-width: 1024px) {
+          margin: 0 30px 0 0;
+        }
+        
+      }
+    }
+    li[hidden]{
+      display: block;
+      @media (max-width: 600px) {
+        display: none;
       }
     }
   }

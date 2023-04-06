@@ -1,6 +1,10 @@
 .notoriety {
   margin: 0px auto 50px;
 
+  @media (max-width: 768px) {
+    margin: 0px auto 15px;
+  }
+
   &__group {
     display: flex;
     justify-content: center;
@@ -16,5 +20,16 @@
     line-height: 22px;
     letter-spacing: 0.4px;
     text-transform: capitalize;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+      margin: 0 0 15px 0;
+    }
+    @media (max-width: 600px) {
+      margin: 0 0 8px 0;
+    }
   }
 }

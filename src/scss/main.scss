@@ -8,6 +8,10 @@
   align-items: flex-start;
   overflow: auto;
   padding: 0 30px;
+
+  @media (max-width: 1024px) {
+    padding: 0 15px;
+  }
 }
 
 .title {
@@ -19,4 +23,13 @@
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (max-width: 1024px) {
+    margin: 30px auto;
+    font-size: 20px;
+  }
+  @media (max-width: 1024px) {
+    margin: 20px auto;
+    font-size: 20px;
+  }
 }

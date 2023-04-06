@@ -1,8 +1,6 @@
 .footer {
   background: #005396;
   padding: 15px 0;
-  &__conteiner {
-  }
   &__text {
     display: flex;
     justify-content: center;
@@ -12,5 +10,9 @@
     line-height: 18px;
     text-align: center;
     color: #ffffff;
+
+    @media (max-width: 320px) {
+      font-size: 14px;
+    }
   }
 }

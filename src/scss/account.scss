@@ -7,6 +7,9 @@
   border: 3px solid #005396;
   border-radius: 15px;
   display: flex;
+  @media (max-width: 445px) {
+    padding: 12px 20px;
+  }
   &__title {
     margin: 0 0 8px 0;
     font-style: normal;
@@ -29,6 +32,11 @@
     line-height: 17px;
     letter-spacing: 0.4px;
     font-variant: small-caps;
+    @media (max-width: 445px) {
+      padding: 10px;
+      margin: 0 0 10px 0;
+      min-width: 200px;
+    }
   }
 
   &__button {
@@ -47,6 +55,10 @@
 
     &:active {
       transform: translateY(2px);
+    }
+    @media (max-width: 445px) {
+      font-size: 14px;
+
     }
   }
 }
