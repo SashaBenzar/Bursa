@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+    rel="stylesheet" />
+  <title>Главная</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <!---------------------------------- меню ---------------------------------->
+<header class="header">
+  <div class="header__conteiner conteiner">
+    <div class="header__logo"><img src="img/logo.png" alt="logo" />
+      <!-- <div class="header__burger">
+        <img src="img/menu.png"/>
+      </div> -->
+    </div>
+    <div class="header__body">
+      <div class="header__top"><img src="img/headerText.png" alt="text" />
+      </div>
+      <div class="header__bottom">
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li><a href="" >перегляд відомостей</a></li>
+            <li hidden ><a href="" >додати нову відомість</a></li>
+            <li><a href="" >профіль</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main"><section class="profile section">
+  <div class="profile__title title">профіль</div>
+  
+    <!---------------------------------- таблиця відомості успішності студентів ---------------------------------->
+<div class="table">
+  <div class="table__head">
+    <div>№<br />Відомості</div>
+    <div>Дата</div>
+    <div>Группа</div>
+    <div>Загальна кількість годин</div>
+    <div>Дисципліна</div>
+    <div>Викладач</div>
+  </div>
+  <div class="table__body">
+    <div class="table__row">
+      <div class="table__check"></div>
+      <div class="table__component">
+        <div>22/594</div>
+        <div>15.03.2023</div>
+        <div>К-301</div>
+        <div>100 годин</div>
+        <div title="Тестування программних систем i комплексiв">
+          Тестування программних систем i комплексiв
+        </div>
+        <div>Артеменко О.І.</div>
+      </div>
+      <div class="table__edit">
+        <img src="img/edit.svg" alt="edit" /><img src="img/delete.svg" alt="delete" />
+      </div>
+    </div>
+    <div class="table__row">
+      <div class="table__component modify">
+        <div>
+          <input type="text" placeholder="№" />
+        </div>
+        <div><input type="text" placeholder="Дата" /></div>
+        <div><input type="text" placeholder="Группа" /></div>
+        <div><input type="text" placeholder="Години" /></div>
+        <div><input type="text" placeholder="Дисципліна" /></div>
+        <div><input type="text" placeholder="Викладач" /></div>
+      </div>
+      <div class="table__edit">
+        <img src="img/eye.svg" alt="edit" />
+      </div>
+    </div>
+    <button class="table__add button">+</button>
+  </div>
+</div>
+
+    
+  <!---------------------------------- реєстрація і логінація ---------------------------------->
+<div class="account">
+  <div class="account__title">Реєстрація</div>
+  <input class="account__input" type="text" placeholder="Прізвище" />
+  <input class="account__input" type="text" placeholder="Ім’я" />
+  <input class="account__input" type="text" placeholder="По-батькові" />
+  <input class="account__input" type="text" placeholder="Факультет" />
+  <input class="account__input" type="text" placeholder="Логін" />
+  <input class="account__input" type="text" placeholder="Пароль" />
+  <p>Ви ввели не правильни логін або пароль!</p>
+  <button class="account__button">Зареєструвати</button>
+</div>
+
+  
+</section>
+</main>
+      <footer class="footer">
+  <div class="footer__conteiner conteiner">
+    <div class="footer__text">Всі права захищені © 2022 ПВНЗ "Буковинський університет"</div>
+  </div>
+</footer>
+
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
