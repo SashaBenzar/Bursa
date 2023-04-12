@@ -102,13 +102,7 @@
     justify-content: center;
     background: #005396;
 
-    // @media (max-width: 470px) {
-    //   display: none;
-    // }
   }
-
-  // &__menu {
-  // }
 
   &__list {
     display: flex;
@@ -160,6 +154,10 @@
           margin: 0 30px 0 0;
         }
         
+      }
+      a{
+        text-decoration: none;
+        color: white;
       }
     }
     li[hidden]{
